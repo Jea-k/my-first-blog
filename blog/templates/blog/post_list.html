@@ -1,11 +1,16 @@
-<header>
-    <h1><a href="/">Tayyabas Blog</a></h1>
-</header>
+<!DOCTYPE html>
+<html>
+    <body>
+        <header>
+            <h1><a href="/">Tayyabas Blog</a></h1>
+        </header>
 
-{% for post in posts %}
-    <article>
-        <h2><a href="">{{ post.title }}</a></h2>
-        <p>{{ post.text|linebreaksbr }}</p>
-        <time>published: {{ post.published_date }}</time>
-        </article>
-{% endfor %}
+        {% for post in posts %}
+            <article>
+             <h2><a href="">{{ post.title }}</a></h2>
+             <p>{{ post.text|linebreaksbr }}</p>
+             <time>published: {{ post.published_date }}</time>
+             </article>
+        {% endfor %}
+    </body>
+</html>
